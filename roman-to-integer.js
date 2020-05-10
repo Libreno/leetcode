@@ -30,15 +30,10 @@ var romanToInt = function(s) {
 			prev = -1;
 			console.log(s[i] + ": " + s[i] + " - " + s[prev] + " = " + l + " (" + res + " totally) >");
 		}
-		else if (siVal < spVal){
+		else {
 			res += spVal;
 			prev = i;
-			console.log(s[i] + ": " + s[prev] + " = " + spVal + " (" + res + " totally) <");
-		}
-		else if (siVal == spVal){
-			res += spVal;
-			prev = i;
-			console.log(s[i] + ": " + s[prev] + " = " + spVal + " (" + res + " totally) =");
+			console.log(s[i] + ": " + s[prev] + " = " + spVal + " (" + res + " totally) <=");
 		}
 	}
 	if (prev != -1){
